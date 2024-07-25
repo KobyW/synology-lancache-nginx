@@ -1,4 +1,6 @@
-# Full-Stack Lancache for Portainer
+# Lancache with NGINX Proxy Manager
+# Compatible with Synology NAS
+# Deployed with Portainer
 
 *Forked from [lancachenet/docker-compose](https://github.com/lancachenet/docker-compose)*
 
