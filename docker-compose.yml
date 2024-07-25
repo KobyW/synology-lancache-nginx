@@ -4,7 +4,7 @@ services:
   dns:
     image: lancachenet/lancache-dns:latest
     env_file: stack.env
-    restart: *restart-policy
+    restart: unless-stopped
     ports:
       - ${DNS_BIND_IP}:53:53/udp
       - ${DNS_BIND_IP}:53:53/tcp
@@ -22,7 +22,7 @@ services:
   monolithic:
     image: lancachenet/monolithic:latest
     env_file: stack.env
-    restart: *restart-policy
+    restart: unless-stopped
     ports:
       - 80:80/tcp
       - 443:443/tcp
